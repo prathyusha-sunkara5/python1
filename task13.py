@@ -1,0 +1,6 @@
+# Task 13 – Bitwise XOR
+
+a = 6
+b = 3
+
+print("a ^ b =", a ^ b)
