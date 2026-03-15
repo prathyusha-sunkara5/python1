@@ -1,0 +1,34 @@
+#9.
+#Create a string "hi" and print it 4 times using replication.
+text = "hi"
+print(text * 4)
+
+#10
+#Create a string "python" and print it 3 times.
+text = "python"
+print(text * 3)
+
+#11.
+#Create two strings "super" and "man" and combine them using + operator.
+a = "super"
+b = "man"
+print(a + b)
+
+#12.
+#Create three strings "hello", " ", "world" and print "hello world".
+a = "hello"
+b = " "
+c = " world"
+print(a + b + c)
+
+#13.
+#Take a name from user input and print it 5 times.
+name = input("please enter your name : ")
+print(name * 5)
+
+#14.
+#Take two strings from user input and concatenate them.
+a = input("please enter your surname:")
+b = input("please enetr your name:")
+print(a + " " + b)
+
