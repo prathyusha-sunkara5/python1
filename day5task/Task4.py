@@ -12,5 +12,8 @@ def factorial(n):
     return n * factorial(n - 1)
 
 print("\nFactorial Results:")
-for n in [0, 5, 7, -3]:
-    print(f"  factorial({n}) = {factorial(n)}")
+while(1==1):
+    n = input("Enter a number:")
+    if(n == ""):
+        break
+    print(f"  factorial({int(n)}) = {factorial(int(n))}")

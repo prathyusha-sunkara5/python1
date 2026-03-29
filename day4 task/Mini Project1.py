@@ -10,7 +10,17 @@
 # Delete employee
 # Display all employees?
 # List to store multiple employees
-employees = []
+employees = [{
+        "name": "abc",
+        "age": 18,
+        "role": "devops",
+        "salary": 1000
+    }, {
+        "name": "abcd",
+        "age": 20,
+        "role": "dev",
+        "salary": 900
+    }]
 def add_employee():
     name = input("Enter employee name: ")
     age = int(input("Enter age: "))
@@ -29,10 +39,16 @@ def add_employee():
 def update_employee():
     name = input("Enter the name of the employee to update: ")
     for emp in employees:
-        if emp["name"].lower() == name.lower():
-            emp["age"] = int(input("Enter new age: "))
-            emp["role"] = input("Enter new role: ")
-            emp["salary"] = float(input("Enter new salary: "))
+        if emp["name"].lower().find(name.lower()) != -1:
+            age = input("Enter new age: ")
+            if(age != ""):
+                emp["age"] = int(age)
+            role = input("Enter new role: ")
+            if(role != ""):
+                emp["role"] = role
+            sal = input("Enter new salary: ")
+            if(sal != ""):
+                emp["salary"] = float(sal)
             print(" Employee details updated!")
             return
     print(" Employee not found!")

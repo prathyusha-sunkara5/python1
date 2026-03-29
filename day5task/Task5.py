@@ -9,6 +9,7 @@ def square_generator(n):
         yield i ** 2
 
 normal_list = [i ** 2 for i in range(1, 6)]
+
 gen = square_generator(5)
 
 print(f"\nNormal list: {normal_list} → {type(normal_list)}")

@@ -18,7 +18,18 @@ file = open("team_data.txt", "w")
 for user in users:
     file.write(f"{user['name']}, {user['age']}, {user['role']}\n")
 
+print("File written successfully")
+
 file.close()
 
-print("File written successfully")
+file = open("team_data.txt", "r")
+
+# Read content
+content = file.read()
+
+# Display content
+print(content)
+
+
+file.close()
 print("Is file closed?", file.closed)
